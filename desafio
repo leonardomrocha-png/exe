@@ -1,0 +1,25 @@
+let alunos = ["Carlos", "Ana", "Beatriz", "Daniel", "Eduardo", "Fernanda", "Gabriel", "Helena", "Igor", "Julia"];
+
+// 1. Verificar se um aluno existe
+console.log("1. Existe Ana?:", alunos.includes("Ana"));
+
+// 2. Encontrar posição de um aluno
+console.log("2. Posição do Daniel:", alunos.indexOf("Daniel"));
+
+// 3. Criar uma parte da lista
+let parte = alunos.slice(0, 4);
+
+// 4. Remover aluno
+alunos.splice(alunos.indexOf("Carlos"), 1);
+
+// 5. Inserir aluno
+alunos.splice(2, 0, "Lucas");
+
+// 6. Ordenar alunos
+alunos.sort();
+
+// 7. Inverter lista
+alunos.reverse();
+
+// 8. Exibir lista como texto
+console.log("8. Lista final:\n" + alunos.join(", "));
